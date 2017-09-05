@@ -1,0 +1,16 @@
+Questionnaire:
+
+1. What will be age range? 
+=> 17-25 yrs old
+
+
+2. What will be school & knowledge level? (high school graduated student)
+=> High school graduated
+
+3. What will be their motivation level?
+=> Highly motivated
+
+
+4. What will be their computer skill level?
+=> Basic / No skill on PS, Illustrator and HTML/CSS
+
