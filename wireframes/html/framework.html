@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 2: Portfolio Page</title>
+        <style>
+            section, aside {
+                border: 1px solid #CDCDCD;
+                padding: 0.5em;
+            }
+            section, aside{
+                margin: 0.5em 0em;
+            }
+            main{
+                margin: 0.5em auto;
+                max-width: 1000px;
+            }
+
+            @media (min-width: 600px){
+                main{
+                    display: grid;
+                    grid-gap: 0.5em;
+                    grid-template-columns: repeat(8, 1fr);
+                    grid-template-areas:
+                        "sect sect sect sect sect aside aside aside";
+                }
+                section{
+                    grid-area: sect;
+                }
+                aside{
+                    grid-area: aside;
+                }
+                nav a{
+                    display: block;
+                    width: 90%;
+                    text-align: center;
+                    margin: 0.5em auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+
+
+            <aside>
+                <nav class="globalNav">
+                    <a href="exercise2.intro.html">Home</a>
+                    <a href="exercise2.blog.html">Blog</a>
+                    <a href="exercise2.portfolio.html">Portfolio</a>
+                    <a href="exercise2.about.html">About</a>
+                </nav>
+            </aside>
+
+
+            <section>
+                <header><h2>Main content header</h2></header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et elit tempor, dapibus magna eget, porttitor ipsum. Pellentesque eleifend tellus scelerisque neque hendrerit, sed molestie lectus rhoncus. Curabitur et nibh nec erat condimentum viverra ac id ligula. Praesent quis porta lacus, sed vulputate lectus. Mauris egestas turpis a nisl egestas tincidunt. Curabitur sit amet nibh orci. Morbi accumsan laoreet velit, at facilisis velit suscipit vel.</p>
+            </section>
+
+
+        </main>
+    </body>
+</html>
