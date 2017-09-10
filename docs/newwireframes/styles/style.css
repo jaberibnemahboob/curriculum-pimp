@@ -14,7 +14,8 @@ h4{font-size: 1.2em; font-weight: bold; padding: 0.8em;}
 h5{font-size: 1.1em; font-weight: bold; padding: 0.5em;}
 h6{font-size: 0.9em; font-weight: bold; padding: 0.5em;}
 a{text-decoration: none; color: #33b5e5;}
-a.active, a:hover{background-color: #DEDEDE;}
+.globalNav a.active, .globalNav a:hover{background-color: #DEDEDE;}
+a.active{color: #DEDEDE; font-weight: bold;}
 li{list-style: none; padding-left: 1em;}
 input{width: 100%; outline: none; padding: 0.5em; margin: 0.5em 0em;}
 textarea{width: 100%; outline: none; padding: 0.5em; margin: 0.5em 0em;}
