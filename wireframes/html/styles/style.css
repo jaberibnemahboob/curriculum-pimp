@@ -1,0 +1,112 @@
+.hidden{display: none;}
+.sticky{position: fixed;}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700);
+
+*{box-sizing: border-box; margin: 0; border: 1px solid #DEDEDE; padding: 0.2em;}
+
+body{font-family: Open Sans, Arial, sans-serif; font-size: 12px; color: #656565;}
+header, main, footer{width: 100%; max-width: 1100px; margin: 0 auto;}
+h1{font-size: 1.8em; font-weight: bold;}
+h2{font-size: 1.6em; font-weight: bold; padding: 1em;}
+h3{font-size: 1.4em; font-weight: bold; padding: 0.8em;}
+h4{font-size: 1.2em; font-weight: bold; padding: 0.8em;}
+h5{font-size: 1.1em; font-weight: bold; padding: 0.5em;}
+h6{font-size: 0.9em; font-weight: bold; padding: 0.5em;}
+a{text-decoration: none; color: #33b5e5;}
+a.active, a:hover{background-color: #DEDEDE;}
+li{list-style: none; padding-left: 1em;}
+input{width: 100%; outline: none; padding: 0.5em; margin: 0.5em 0em;}
+textarea{width: 100%; outline: none; padding: 0.5em; margin: 0.5em 0em;}
+
+.mainHeader{text-align: center;}
+
+.logo{width: 100%; height: 100%; max-width: 150px; margin: 0 auto;}
+.logo a{display: block; width: 100%; height: 100%;}
+.logo img{width: 100%; height: 100%;}
+.btn{
+    display: inline-block;
+    font-size: 1.1em;
+    width: 50%;
+    max-width: 300px;
+    min-width: 150px;
+    padding: 1em;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #656565;
+    cursor: pointer;
+}
+
+.burgerIco{display: none;}
+#burgerNavAccess{display: none;}
+
+.globalNav a{line-height: 3.6em; text-align: center;}
+
+.homePage main{max-width: inherit;}
+.headerBanner{
+    height: 80vh; width: 100%; text-align: center;
+    background: url(../images/image.png) no-repeat 50%; background-size: cover;
+}
+.headerBanner .header{margin-top: 25vh;}
+
+.rightSideBar nav a{display: block; width: 100%;}
+
+.mainHeader{grid-area: mainHeader;}
+.logo{grid-area: headerLogo;}
+.pageHeader{grid-area: headerHeader;}
+.burgerIco{grid-area: headerBurgerIco;}
+.globalNav{grid-area: globalNav;}
+.mainSection{grid-area: mainSection;}
+.rightSideBar{grid-area: rightSideBar;}
+
+/*FOR MOBILE VERSION*/
+@media screen and (max-width: 764px){
+    .pageHeader{text-align: center;}
+    .burgerIco{text-align: right; font-size: 1.8em; display: block;}
+    .globalNav{padding: 0;}
+    .globalNav a{display: block; width: 100%;}
+
+    #burgerNavAccess ~ a{display: none;}
+    #burgerNavAccess:checked ~ a{display: block;}
+    .mainHeader{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+            "headerLogo headerLogo headerHeader headerHeader headerHeader headerHeader headerHeader headerBurgerIco";
+    }
+    .headerBanner .header h2 span{display: none;}
+}
+
+/*FOR DESKTOP VERSION*/
+@media screen and (min-width: 764px){
+    .burgerIco{display: none;}
+    #burgerNavAccess ~ a{display: block;}
+
+    .topBarHeader{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+            "mainHeader mainHeader mainHeader mainHeader globalNav globalNav globalNav globalNav";
+    }
+    .mainHeader{
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        "headerLogo headerLogo headerHeader headerHeader headerHeader headerHeader headerHeader headerHeader";
+    }
+    .globalNav{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(auto-fill, 24%);
+    }
+    main.goldenRatio{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+            "mainSection mainSection mainSection mainSection mainSection rightSideBar rightSideBar rightSideBar";
+    }
+}
