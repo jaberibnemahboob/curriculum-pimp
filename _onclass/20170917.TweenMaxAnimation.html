@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <style>
-
+            #menu li{background: lightblue; max-width: 250px;}
         </style>
     </head>
     <body>
@@ -35,14 +35,19 @@
 
         <script>
             window.addEventListener("load",function(){
-                TweenMax.staggerTo('#menu li',2,{
-                    x: 500,
-                    y: 300,
-                    rotation: 45,
-                    background: "yellow",
-                    borderRadius: "25px",
-                    visibility: 0.6
-                }, 0.1);
+                let tl = new TimelineMax();
+                tl.staggerFrom("#menu li", 2,
+                {
+                    x: -500,
+                    ease: Elastic.easeOut.config(1, 0.3)
+                }, 0.05)
+                .staggerTo("#menu li", 1,
+                {
+                    rotation: function(){
+                        return Math.random()*360;
+                    },
+                    ease: Elastic.easeInOut.config(1, 0.3)
+                }, 0.1, "-=1")
             });
         </script>
 

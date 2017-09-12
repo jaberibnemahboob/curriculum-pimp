@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            #menu li{background: lightblue; max-width: 250px;}
+        </style>
+    </head>
+    <body>
+        <ul id="menu">
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+        </ul>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+        <script>
+            window.addEventListener("load",function(){
+                let tl = new TimelineMax();
+                tl.staggerFrom("#menu li", 2,
+                {
+                    x: -500,
+                    ease: Elastic.easeOut.config(1, 0.3)
+                }, 0.05)
+                .staggerTo("#menu li", 1,
+                {
+                    rotation: function(){
+                        return Math.random()*360;
+                    },
+                    ease: Elastic.easeInOut.config(1, 0.3)
+                }, 0.1, "-=1")
+            });
+        </script>
+
+    </body>
+</html>
