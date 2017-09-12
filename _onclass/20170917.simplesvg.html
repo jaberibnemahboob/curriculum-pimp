@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            svg{
+                width: 500px;
+                height: 500px;
+                background: green;
+            }
+            rect{
+                fill: lightblue;
+            }
+            line{
+                stroke: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <svg viewBox="0 0 100 100">
+            <rect x="20" y="20" width="50" height="50"></rect>
+            <line x1="90" y1="10" x2="10" y2="90"></line>
+        </svg>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+        <script>
+            window.addEventListener("load",function(){
+                TweenMax.to('line',3,{
+                    x: -20,
+                    y: 60
+                })
+            });
+        </script>
+
+    </body>
+</html>

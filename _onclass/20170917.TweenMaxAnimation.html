@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <ul id="menu">
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+            <li>Hi Mom</li>
+        </ul>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+        <script>
+            window.addEventListener("load",function(){
+                TweenMax.staggerTo('#menu li',2,{
+                    x: 500,
+                    y: 300,
+                    rotation: 45,
+                    background: "yellow",
+                    borderRadius: "25px",
+                    visibility: 0.6
+                }, 0.1);
+            });
+        </script>
+
+    </body>
+</html>
