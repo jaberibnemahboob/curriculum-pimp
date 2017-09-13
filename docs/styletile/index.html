@@ -6,35 +6,150 @@
         <title>StyleTile</title>
 
         <link rel="stylesheet" href="styles/style.css"/>
+
+        <style>
+            .stage{
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 1055px;
+                margin: 0 auto;
+                height: 1000px;
+            }
+            .layer{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .bg>img{
+                width: 100%;
+                height: 100%;
+            }
+            .halfTransparentLayer>div{
+                width: 50%;
+                height: 100%;
+                opacity: 0.55;
+            }
+            .contentBg>div{
+                margin: 10% 4% 4% 4%;
+                width: 92%;
+                height: 86%;
+                opacity: 0.9;
+            }
+            .content>div{
+                margin: 10% 4% 4% 4%;
+                width: 92%;
+                height: 86%;
+            }
+            .mainContent{
+                display: grid;
+                grid-gap: 0.5em;
+                grid-template-columns: repeat(auto-fill, 49%);
+            }
+            .mainContent>div.left>div.logo>div{
+                margin: 0 7em;
+                height: auto;
+                display: grid;
+                grid-gap: 2em;
+                grid-template-columns: repeat(auto-fill, 42%);
+            }
+            .mainContent>div.left, .mainContent>div.right{
+                padding: 2em;
+            }
+            .mainContent>div.left>div.font>div>div{
+                margin-bottom: 2.5em;
+            }
+            .mainContent>div.left>div.icon>div img{
+                width: 30%;
+                display: block;
+                margin: 0 auto;
+            }
+            .styleTileTile h1{
+                margin-top: 4%;
+                margin-left: 5%;
+            }
+            .carouselNav>ul{
+                padding: 42.5% 49.5%;
+            }
+            .carouselNav>ul>li{
+                list-style: none;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                margin-top: 1.5em;
+                border: 1px solid black;
+            }
+            .carouselNav>ul>li.active{
+                background-color: black;
+            }
+
+            .styleTileContentType{text-transform: uppercase; text-align: center; margin: 2em 0em 1em 0em;}
+        </style>
     </head>
     <body>
-        <main>
-            <section class="content">
-                <h1 class="styleTileHeader">STYLE TILE</h1>
-                <div class="wrapper">
-                    <div class="allStaticContent">
-                        <div class="logoHolderWrapper">
-                            <p class="styletileType">Logotype</p>
-                            <div class="logoHolder">
-                                <div class="logo"><img src="images/logo2.png" alt="Logo2"/></div>
-                                <div class="logo"><img src="images/logo1.png" alt="Logo2"/></div>
-                                <div class="logo"><img src="images/logo4.png" alt="Logo2"/></div>
-                                <div class="logo"><img src="images/logo3.png" alt="Logo2"/></div>
+        <main class="stage">
+            <section class="layer bg"><img src="images/bodybg.png" alt="BG"/></section>
+            <section class="layer halfTransparentLayer">
+                <div class="colorBg1">&nbsp;</div>
+            </section>
+            <section class="layer contentBg">
+                <div class="colorBg4">&nbsp;</div>
+            </section>
+            <section class="layer styleTileTile">
+                <h1 class="uppercase styleTileHeader">Style Tile</h1>
+            </section>
+            <section class="layer carouselNav">
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="layer content">
+                <div class="mainContent">
+                    <div class="left">
+                        <div class="logo">
+                            <p class="styleTileContentType color3">LogoType</p>
+                            <div>
+                                <img src="images/logo2.png" alt="Logo1"/>
+                                <img src="images/logo1.png" alt="Logo1"/>
+                                <img src="images/logo4.png" alt="Logo1"/>
+                                <img src="images/logo3.png" alt="Logo1"/>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <p class="styleTileContentType color3">Icons</p>
+                            <div>
+                                <img src="images/icon.png" alt="icon"/>
+                            </div>
+                        </div>
+                        <div class="font">
+                            <p class="styleTileContentType color3">Font</p>
+                            <div>
+                                <div class="headerFont">
+                                    <p><span class="label colorBg1 bold">&nbsp;Header&nbsp;</span>&nbsp;&nbsp;&nbsp;<span class="bold">Font: </span>Bebas Neue, &nbsp;&nbsp;&nbsp;<span class="bold">Kerning: </span>100px</p>
+                                    <h1 class="header">This is a Header</h1>
+                                </div>
+                                <div class="subheaderFont">
+                                    <p><span class="label colorBg1 bold">&nbsp;Sub-Header&nbsp;</span>&nbsp;&nbsp;&nbsp;<span class="bold">Font: </span>Roboto-Medium, &nbsp;&nbsp;&nbsp;<span class="bold">Kerning: </span>50px</p>
+                                    <h2 class="sub-header">This is a sub-header</h2>
+                                </div>
+                                <div class="paragraphFont">
+                                    <p><span class="label colorBg1 bold">&nbsp;Paragraph&nbsp;</span>&nbsp;&nbsp;&nbsp;<span class="bold">Font: </span>Roboto-Light, &nbsp;&nbsp;&nbsp;<span class="bold">Kerning: </span>0px</p>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="linkFont">
+                                    <p><span class="label colorBg1 bold">&nbsp;Links&nbsp;</span>&nbsp;&nbsp;&nbsp;<span class="bold">Font: </span>Roboto-Regular, &nbsp;&nbsp;&nbsp;<span class="bold">Kerning: </span>0px</p>
+                                    <a class="link">This is a link</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carouselBtnHolder">
-                        <div class="carouselBtn active">&nbsp;</div>
-                        <div class="carouselBtn">&nbsp;</div>
-                        <div class="carouselBtn">&nbsp;</div>
-                        <div class="carouselBtn">&nbsp;</div>
-                    </div>
                 </div>
-
-                <section class="fullPageBg">
-                    <img src="images/bodybg.png" alt="Page BG"/>
-                    <div class="transparentLayer">&nbsp;</div>
-                </section>
             </section>
         </main>
         <script type="text/javascript" src="scripts/script.js"></script>

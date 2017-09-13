@@ -3,78 +3,28 @@
 @font-face {font-family: Roboto-Light; src: url(../fonts/Roboto-Light.ttf);}
 @font-face {font-family: Roboto-Medium; src: url(../fonts/Roboto-Medium.ttf);}
 @font-face {font-family: Roboto-Regular; src: url(../fonts/Roboto-Regular.ttf);}
-h1{font-family: BebasNeue-Bold; font-size: 2.2em; color: #38333a;}
-main{font-family: Roboto-Regular; font-size: 12px; min-height: 100%;}
+h1,h2,p,a{margin-bottom: 0.6em;}
+h1{font-family: BebasNeue-Bold; font-size: 2.6em;}
+main{font-family: Roboto-Regular; font-size: 13px; min-height: 100%; color: #38333a;}
 img{width: 100%;}
+p{text-align: justify; margin: 0.5em 0em;}
 
-.fullPageBg{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.fullPageBg img{
-    width: 100%;
-    height: 100%;
-}
-.transparentLayer{
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    opacity: 0.7;
-    background-color: #eab021;
-}
-.content{
-    position: relative;
-    width: 100%;
-    padding: 4em;
-}
-.wrapper{
-    width: 100%;
-    background: rgba(255,255,255, 0.9);
-}
-.styleTileHeader{
-    padding: 0em 0em 0.7em 1.5em;
-    color: #ffffff;
-}
-.carouselBtnHolder{
-    position: absolute;
-    top: 0;
-    padding: 50% 50%;
-    width: 100%;
-}
-.carouselBtn{
-    display: block;
-    width: 0.6em;
-    height: 0.6em;
-    border-radius: 49%;
-    border: 1px solid #38333a;
-    margin-top: 0.5em;
-    cursor: pointer;
-}
-.carouselBtn.active{
-    background-color: #38333a;
-}
-.styletileType{
-    text-transform: uppercase;
-    color: #CCCCCC;
-    font-size: 0.8em;
-    text-align: center;
-    margin: 0.5em;
-}
-.wrapper{position: relative;}
-.allStaticContent{
-    padding: 1em;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, 48%);
-}
-.logoHolder{
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, 47.5%);
-}
+.color1{color: #eab021;}
+.colorBg1{background-color: #eab021;}
+.color2{color: #38333a;}
+.colorBg2{background-color: #38333a;}
+.color3{color: #50515b;}
+.colorBg3{background-color: #50515b;}
+.color4{color: #ffffff;}
+.colorBg4{background-color: #ffffff;}
+
+.uppercase{text-transform: uppercase;}
+.capitalize{text-transform: capitalize;}
+.bold{font-weight: bold;}
+
+.lable{display: block; color: white; font-weight: bold; font-family: Roboto-Medium;}
+
+.header{font-family: BebasNeue-Bold; color: #eab021;}
+.sub-header{font-family: Roboto-Medium; color: #38333a;}
+.paragraph{font-family: Roboto-Light; color: #38333a;}
+.link{font-family: Roboto-Regular; color: #eab021; cursor: pointer;}
