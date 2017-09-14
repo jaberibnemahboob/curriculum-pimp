@@ -28,6 +28,8 @@ li{list-style: none;}
 
 /* MAIN */
 .homePage main{display: block;}
+.homePage main section.mainContent{display: block;}
+.homePage main section.mainContent p{text-align: center;}
 
 /* GENERAL CLASS */
 .cursorPointer{cursor: pointer;}
