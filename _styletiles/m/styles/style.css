@@ -196,3 +196,15 @@ button.primary.hover{
         padding: 5% 0%;
     }
 }
+
+@media screen and (min-width: 1100px){
+    main{padding: 4rem;}
+    section{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(auto-fill, 4%);
+    }
+    section article.leftContent{grid-column: 1/12;}
+    section article.middleContent{grid-column: 12/13;}
+    section article.rightContent{grid-column: 14/26;}
+}
