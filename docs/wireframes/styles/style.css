@@ -1,0 +1,72 @@
+:root{
+    --colorPalette1: #eab021;
+    --colorPalette2: #38333A;
+    --colorPalette3: #50515b;
+    --colorPalette4: #ffffff;
+}
+
+@font-face {font-family: BebasNeue-Bold; src: url(../fonts/BebasNeue-Bold.otf);}
+@font-face {font-family: Roboto-Light; src: url(../fonts/Roboto-Light.ttf);}
+@font-face {font-family: Roboto-Medium; src: url(../fonts/Roboto-Medium.ttf);}
+@font-face {font-family: Roboto-Regular; src: url(../fonts/Roboto-Regular.ttf);}
+
+img{}
+a{color: var(--colorPalette1); font-family: Roboto-Regular; margin-bottom: 1rem;}
+nav a{font-family: BebasNeue-Bold; color: var(--colorPalette2);}
+nav input{font-family: BebasNeue-Bold; font-size: 1.6em; color: var(--colorPalette2);}
+h1{color: var(--colorPalette1); font-family: BebasNeue-Bold; font-size: 2.6em; text-transform: uppercase; margin-bottom: 1rem;}
+h2{color: var(--colorPalette2); font-family: Roboto-Medium; font-size: 1.2em; margin-bottom: 1rem;}
+p{color: var(--colorPalette2); font-family: Roboto-Light; font-size: 1em; margin-bottom: 1rem; text-align: justify;}
+button, .btn, .button{
+    display: block;
+    border: none;
+    background: url(../images/defaultbtn.png) no-repeat;
+    background-size: 100%;
+    color: var(--colorPalette2);
+    width: 160px;
+    height: 60px;
+    font-size: 1.6em;
+    line-height: 60px;
+    font-family: BebasNeue-Bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+button:hover, .btn:hover, .button:hover{
+    background: url(../images/defaultbtn_hover.png) no-repeat;
+    background-size: 100%;
+    color: var(--colorPalette4);
+}
+button.primary, .btn.primary, .button.primary{
+    background: url(../images/primarybtn.png) no-repeat;
+    background-size: 100%;
+    color: var(--colorPalette1);
+}
+button.primary:hover, .btn.primary:hover, .button.primary:hover{
+    background: url(../images/primarybtn_hover.png) no-repeat;
+    background-size: 100%;
+    color: var(--colorPalette4);
+}
+
+/* TOP NAV */
+.topNav{display: block; width: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); background: #ffffff;}
+.topNav a.active span, .topNav a:hover span{border-top: 2px solid var(--colorPalette1);}
+.burgerIco{font-size: 2.3em;}
+
+/* SIDE BAR NAV */
+.sideBarNavHolder nav{box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); border: none;}
+.sideBarNavHolder nav a{display: block; font-size: 1.2em; text-align: right; margin: 0.5rem 0.1rem;}
+
+/* PAGE CONTENT */
+
+
+/* HOME PAGE CROUSEL */
+.homePage main{position: relative; top: 0; left: 0;}
+.homePageCarousel{display: none;}
+.homePageCarousel img{width: 100%; height: 100%;}
+.homePage .homePageCarousel{display: block;position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -10;}
+.homePage .homePageCarousel
+.homePage .carousel{width: 100%; height: 100%; position: relative; top: 0; left: 0;}
+.homePage .carousel .imgBox{width: 100%; height: 100%; position: absolute;}
+.homePage .carousel .navBox{width: 2%; position: absolute; margin: 18rem 0rem; margin-left: 97%;}
+.homePage .carousel .navBox li{width: 0.6rem; height: 0.6rem; margin: 0.5rem 0rem; display: block; border: 1px solid var(--colorPalette2); background: var(--colorPalette4); border-radius: 50%;}
