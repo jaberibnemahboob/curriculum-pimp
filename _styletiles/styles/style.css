@@ -41,7 +41,6 @@ button{
     cursor: pointer;
     margin: 0.5em 0.2em;
 }
-
 button.default{
     background: url(../images/defaultbtn.png) no-repeat;
     background-size: 100%;
@@ -82,7 +81,7 @@ button.primary.hover{
     left: 0;
     width: 1055px;
     margin: 0 auto;
-    height: 1000px;
+    height: 980px;
 }
 .layer{
     position: absolute;
@@ -128,7 +127,7 @@ button.primary.hover{
     padding: 2em;
 }
 .mainContent>div.left>div.font>div>div{
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
 }
 .mainContent>div.left>div.icon>div img{
     width: 30%;
@@ -160,7 +159,7 @@ button.primary.hover{
     margin: 0 4em;
     height: auto;
     display: grid;
-    grid-gap: 2em;
+    grid-gap: 1.5em;
     grid-template-columns: repeat(auto-fill, 42%);
 }
 .styleTileTile h1{

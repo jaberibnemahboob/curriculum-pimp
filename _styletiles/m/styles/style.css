@@ -1,0 +1,198 @@
+*{box-sizing: border-box; margin: 0px; padding: 0px;}
+@font-face {font-family: BebasNeue-Bold; src: url(../fonts/BebasNeue-Bold.otf);}
+@font-face {font-family: Roboto-Light; src: url(../fonts/Roboto-Light.ttf);}
+@font-face {font-family: Roboto-Medium; src: url(../fonts/Roboto-Medium.ttf);}
+@font-face {font-family: Roboto-Regular; src: url(../fonts/Roboto-Regular.ttf);}
+
+main{font-family: Roboto-Regular; font-size: 13px; min-height: 100%; color: #38333a;}
+h1,h2,p,a{margin-bottom: 0.6em;}
+h1{font-family: BebasNeue-Bold; font-size: 2.4em;}
+p{text-align: justify; margin: 0.5em 0em;}
+img{width: 20%;}
+a{text-decoration: none; color: #eab021;}
+
+.color1{color: #eab021;}
+.colorBg1{background-color: #eab021;}
+.color2{color: #38333a;}
+.colorBg2{background-color: #38333a;}
+.color3{color: #50515b;}
+.colorBg3{background-color: #50515b;}
+.color4{color: #ffffff;}
+.colorBg4{background-color: #ffffff;}
+.uppercase{text-transform: uppercase;}
+.capitalize{text-transform: capitalize;}
+.bold{font-weight: bold;}
+.lable{display: block; color: white; font-weight: bold; font-family: Roboto-Medium;}
+.header{font-family: BebasNeue-Bold; color: #eab021;}
+.sub-header{font-family: Roboto-Medium; color: #38333a;}
+.paragraph{font-family: Roboto-Light; color: #38333a;}
+.link{font-family: Roboto-Regular; color: #eab021; cursor: pointer;}
+
+main{
+    background: url(../images/bodybg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 2em;
+    max-width: 1055px;
+    /* max-height: 980px; */
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    margin-left: 1em;
+}
+section{
+    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.85);
+    padding: 1.5em;
+}
+.logo div img{
+    width: 70%;
+    margin: 1em auto;
+    display: block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.icon div img{
+    width: 85%;
+    margin: 1em auto;
+    display: block;
+}
+.leftContent div>div{
+    margin: 2em auto;
+}
+.menu nav{
+    margin: 2em 0em;
+}
+.menu nav img{
+    width: 12%;
+    margin: 0 auto;
+    display: block;
+}
+.menu nav.firstNav a ~ a{
+    display: none;
+}
+.menu nav.secondNav{
+    padding: 1.5em;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+    width: 60%;
+}
+.menu nav.secondNav img{
+    width: 20%;
+    display: inline;
+}
+.menu nav.secondNav a{
+    display: block;
+    margin: 0.5em auto;
+    text-align: center;
+}
+.menu nav.secondNav a:first-child{
+    display: inline;
+    text-align: left;
+}
+.menu nav a{
+    font-family: BebasNeue-Bold;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #38333a;
+    text-align: center;
+}
+.menu>nav a.active span{
+    border-top: 0.15em solid #eab021;
+}
+.texture div img{
+    width: 70%;
+    margin: 1em auto;
+    display: block;
+}
+.button button{
+    display: block;
+    margin: 1rem auto;
+}
+button{
+    border: none;
+    background: url(../images/defaultbtn.png) no-repeat;
+    background-size: 100%;
+    background-size: 200px 75px;
+    width: 160px;
+    height: 60px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0.5em 0.2em;
+}
+button.default{
+    background: url(../images/defaultbtn.png) no-repeat;
+    background-size: 100%;
+    background-size: 160px 60px;
+}
+button.default.hover{
+    background: url(../images/defaultbtn_hover.png) no-repeat;
+    background-size: 100%;
+    background-size: 160px 60px;
+}
+button.primary{
+    background: url(../images/primarybtn.png) no-repeat;
+    background-size: 100%;
+    background-size: 160px 60px;
+}
+button.primary.hover{
+    background: url(../images/primarybtn_hover.png) no-repeat;
+    background-size: 100%;
+    background-size: 160px 60px;
+}
+.colorpalette{
+    min-height: 450px;
+    text-align: center;
+}
+.colorpaletteitem{
+    display: inline-block;
+    width: 43%;
+    padding: 20% 0%;
+    margin: 0.5em 0.5em;
+    text-align: center;
+    color: #ffffff;
+}
+.colorpaletteitem.white{
+    color: #38333a;
+}
+.carouselNav>ul{
+    display: block;
+    text-align: center;
+}
+.carouselNav>ul>li{
+    display: inline-block;
+    list-style: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-top: 0.5em;
+    border: 1px solid black;
+}
+.carouselNav>ul>li.active{
+    background-color: black;
+}
+.styleTileContentType{text-transform: uppercase; text-align: center; margin: 2em 0em 1em 0em;}
+
+@media screen and (min-width: 764px){
+    .logo div{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(auto-fill, 49%);
+    }
+    .texture div{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(auto-fill, 49%);
+    }
+    .icon div img{
+        width: 40%;
+    }
+    .colorpalette{
+        min-height: auto;
+    }
+    .colorpaletteitem{
+        width: 12%;
+        padding: 5% 0%;
+    }
+}
