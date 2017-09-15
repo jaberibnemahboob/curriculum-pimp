@@ -49,7 +49,6 @@ li{list-style: none;}
 
 /* PAGE DATA */
 .infoBox .info{margin: 0.5rem 0rem;}
-/*.infoBox .shortInfo{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 12%); padding: 0.2rem;}*/
 .infoBox .shortInfo{min-height: 50px;}
 .infoBox .shortInfo .iconHolder{grid-column: 1/3;}
 .infoBox .shortInfo .infoMenuHolder{grid-column: 3/12;}
