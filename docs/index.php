@@ -14,9 +14,15 @@
 </head>
 <body>
     <nav>
-        <a href="JSONMoviesExercise/index.html">JSON Movies Exercise</a>
-        <a href="wireframes/home.html">Wireframe for Group Hand in</a>
-        <a href="iteration1/index.html">Iteration 1 Hand in</a>
+<?php
+    $path = new array(__DIR__);
+    foreach(scandir($path) as $file){
+        if($file!="." &&
+        $file!=".." &&
+        is_dir($path.DS.$file)) echo '<a href="'.$file.'">'.$file.'</a>';
+    }
+?>
     </nav>
 </body>
 </html>
+
