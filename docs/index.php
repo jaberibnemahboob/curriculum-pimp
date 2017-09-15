@@ -14,14 +14,7 @@
 </head>
 <body>
     <nav>
-<?php
-    $path = new array(__DIR__);
-    foreach(scandir($path) as $file){
-        if($file!="." &&
-        $file!=".." &&
-        is_dir($path.DS.$file)) echo '<a href="'.$file.'">'.$file.'</a>';
-    }
-?>
+
     </nav>
 </body>
 </html>
