@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style type="text/css">
+            /* WIREFRAME STYLE */
+            *{box-sizing: border-box; margin: 0em;}
+            body{font-size: 13px;}
+            img{width: 100%;}
+            svg{width: 100%; height: auto;}
+
+            section.topBar{
+                display: grid;
+                grid-gap: 1%;
+                grid-template-columns: repeat(auto-fill,11.625%); /* 8 columns */
+            }
+            section.topBar .logoBar{
+                grid-column: 1/4;
+            }
+            section.topBar .topNavBar{
+                grid-column: 4/9);
+            }
+            section.topBar .topNavBar>div{
+                display: grid;
+                grid-gap: 1%;
+                grid-template-columns: repeat(auto-fill,19.200%); /* 5 columns */
+            }
+            section.topBar .topNavBar .navBarNav{
+                grid-column: 1/5;
+                display: grid;
+                grid-gap: 1%;
+                grid-template-columns: repeat(auto-fill, 24.250%); /* 4 columns */
+            }
+            section.topBar .topNavBar .navBarSearch{
+                grid-column: 5/6;
+            }
+
+            .hidden{display: none;}
+            .icon{max-width: 1.5em; max-height: 1.5em; display: inline-block;}
+            .logo{width: 120px; height: 60px; padding: 0.25em;}
+
+        </style>
+    </head>
+    <body>
+
+        <section class="topBar">
+            <div class="logoBar"><img class="logo" src="images/logo.svg" alt="Logo"/></div>
+            <div class="topNavBar">
+                <div>
+                    <div class="navBarNav">
+                        <label class="toggleShowCheckbox" for="navToggleShowCheckbox">&#9776;</label>
+                        <nav>
+                            <input type="checkbox" class="hidden" id="navToggleShowCheckbox"/>
+                            <a href="index.html">Home</a>
+                            <a href="index.html">Curriculum</a>
+                            <a href="index.html">Facts</a>
+                            <a href="index.html">About</a>
+                        </nav>
+                    </div>
+                    <div class="navBarSearch inputIconGroup">
+                        <div class="iconHolder">
+                            <img class="icon searchIcon img2svg" src="images/iconSearch.svg" alt="Search Icon"/>
+                        </div>
+                        <input type="text" name="search" value="" placeholder="Search"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <section class="topBanner">
+
+            </section>
+        </main>
+
+        <footer>
+            <h5>Footer Goes Here</h5>
+        </footer>
+
+        <script type="text/javascript" src="scripts/loader.js"></script>
+        <script>
+
+        </script>
+    </body>
+</html>
