@@ -7,11 +7,8 @@
         <title>Home</title>
         <style type="text/css">
             /* WIREFRAME STYLE */
-            *{box-sizing: border-box; margin: 0em;}
-            body{font-size: 13px;}
-            section,main,footer{max-width: 1100px; margin: 0.5em auto; border: 1px solid #DEDEDE;}
-            img{width: 100%;}
-            svg{width: 100%; height: auto;}
+
+
 
             /* TOB BAR IN MOBILE VERSION */
             section.topBar{
@@ -33,19 +30,48 @@
                 margin: 0.75em auto;
                 text-align: center;
             }
-
-            .hidden{display: none;}
-            .icon{max-width: 1.5em; max-height: 1.5em; display: inline-block;}
-            .logo{width: 120px; height: 60px; padding: 0.25em;}
-
         </style>
     </head>
     <body>
 
+
+        <section class="topBar">
+            <div><img class="logo" src="images/logo.svg" alt="Logo"/></div>
+            <div>
+                <div class="iconHolder" data-for="labelToggleShowCheckBox">
+                    <img class="icon xl menuIcon img2svg" src="images/iconHamburger.svg" alt="Menu Icon"/>
+                    <img class="icon xl closeIcon img2svg hidden" src="images/iconClose.svg" alt="Close Icon"/>
+                </div>
+                <nav class="topNav">
+                    <input type="checkbox" class="toggleShowCheckBox hidden"/>
+                    <a class="active" href="index.html"><span>Home</span></a>
+                    <a href="curriculum.html"><span>Programme Details</span></a>
+                    <a href="facts.html"><span>Facts</span></a>
+                    <a href="about.html"><span>About</span></a>
+                </nav>
+            </div>
+            <div class="searchBox inputIconGroup">
+                <div>
+                    <div class="iconHolder">
+                        <img class="icon searchIcon img2svg" src="images/iconSearch.svg" alt="Search Icon"/>
+                    </div>
+                <input type="text" name="search" value="" placeholder="Search"/>
+                </div>
+            </div>
+        </section>
+
+
+
         <section class="topBar">
             <div class="logoHolder"><img class="logo" src="images/logo.svg" alt="logo"/></div>
             <div class="topNav">
-                <label class="toggleShowCheckbox" for="navToggleShowCheckbox">&#9776;</label>
+                <label class="toggleShowCheckbox" for="navToggleShowCheckbox"></label>
+                <div class="toggleShowCheckBox" data-for="navToggleShowCheckbox">
+                    <div class="iconHolder">
+                        <img class="icon hidden menuIcon img2svg" src="images/iconHamburger.svg" alt="Menu Icon"/>
+                        <img class="icon closeIcon img2svg" src="images/iconClose.svg" alt="Close Icon"/>
+                    </div>
+                </div>
                 <nav>
                     <input type="checkbox" class="hidden" id="navToggleShowCheckbox"/>
                     <a href="index.html">Home</a>

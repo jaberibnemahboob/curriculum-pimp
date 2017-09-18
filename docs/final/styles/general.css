@@ -1,0 +1,19 @@
+*{box-sizing: border-box; margin: 0em;}
+body{font-size: 13px;}
+section,main,footer{max-width: 1100px; margin: 0.5em auto; border: 1px solid #DEDEDE;}
+img{width: 100%;}
+svg{fill: #333333; width: 100%; height: auto;}
+
+.hidden{display: none;}
+
+.icon{max-width: 1.5em; max-height: 1.5em; line-height: 1.5em; display: inline-block; text-align: center;}
+.icon.nm{max-width: 1.5em; max-height: 1.5em; line-height: 1.5em;}
+.icon.sm{max-width: 1.2em; max-height: 1.2em; line-height: 1.2em;}
+.icon.md{max-width: 1.7em; max-height: 1.7em; line-height: 1.7em;}
+.icon.lg{max-width: 2.0em; max-height: 2.0em; line-height: 2.0em;}
+.icon.xl{max-width: 2.3em; max-height: 2.3em; line-height: 2.3em;}
+.icon.xxl{max-width: 2.5em; max-height: 2.5em; line-height: 2.5em;}
+
+.logo{width: 120px; height: 60px; padding: 0.25em;}
+
+.searchIcon svg{fill: #999999;}
