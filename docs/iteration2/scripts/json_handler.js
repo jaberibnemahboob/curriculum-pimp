@@ -12,9 +12,13 @@ function getData(link, pageID){
     });
 }
 function show(json, pageID){
+    document.querySelector(".sideBarMenu").innerHTML = '';
+    pageContent.innerHTML = '';
+    let currentPageID;
+
     json.forEach(function(pageCont){
         if(pageID == pageCont.pageID){
-            console.log(pageCont)
+            //console.log(pageCont)
 
             //STEP 1: get clone from template
             let clone = pageTemplate.cloneNode(true);
@@ -27,7 +31,7 @@ function show(json, pageID){
             //STEP 3: add subSection data
             subSectionContent = clone.querySelector(".data_subSectionItems");
             pageCont.subSectionItems.forEach(function(subSectCont, index){
-                console.log(subSectCont.header);
+                //console.log(subSectCont.header);
 
                 //STEP 1: get clone2 from template
                 let clone2 = subSectionTemplate.cloneNode(true);
@@ -45,6 +49,10 @@ function show(json, pageID){
             //STEP 4: add cloned data to page
             pageContent.appendChild(clone);
         }
+
+        //add a submenu for each in sideBarMenu
+        document.querySelector(".sideBarMenu").innerHTML = document.querySelector(".sideBarMenu").innerHTML +
+            '<a' + ((pageID == pageCont.pageID)?' class = "active"':'') + ' href="#" onclick="getData(dataSource, \''+ pageCont.pageID +'\');"><span>' + pageCont.menuItem + '</span></a>';
     });
 }
 function jsonObject2html(object, returnData){
@@ -53,7 +61,7 @@ function jsonObject2html(object, returnData){
 
     for(let tagKey in object){
         if(object.hasOwnProperty(tagKey)){
-            console.log(object[tagKey]);
+            //console.log(object[tagKey]);
             if(typeof (object[tagKey].value.content) == "object"){
                 returnData = returnData + '<' + tagKey.split("_")[0] + ' ' + getKeyValuePairs(object[tagKey].attribute) + '>' + jsonObject2html(object[tagKey].value.content, '') + '</' + tagKey.split("_")[0] + '>';
             }else if(typeof(object[tagKey].value.content) == "string"){
