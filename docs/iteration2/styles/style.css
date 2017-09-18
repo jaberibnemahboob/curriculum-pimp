@@ -64,7 +64,7 @@ textarea{min-height: 10em;}
 
 /* TOP NAV */
 .topNav{display: block; width: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); background: #ffffff;}
-.topNav a.active span, .topNav a:hover span{border-top: 2px solid var(--colorPalette1);}
+nav a.active span, nav a:hover span{border-top: 2px solid var(--colorPalette1);}
 .burgerIco{font-size: 2.3em;}
 
 /* SIDE BAR NAV */
