@@ -7,66 +7,84 @@
         <title>Home</title>
         <style type="text/css">
             /* WIREFRAME STYLE */
-            *{box-sizing: border-box; margin: 0em;}
-            body{font-size: 13px;}
-            img{width: 100%;}
-            svg{width: 100%; height: auto;}
 
+
+
+            /* TOB BAR IN MOBILE VERSION */
             section.topBar{
-                display: grid;
-                grid-gap: 1%;
-                grid-template-columns: repeat(auto-fill,11.625%); /* 8 columns */
-            }
-            section.topBar .logoBar{
-                grid-column: 1/4;
-            }
-            section.topBar .topNavBar{
-                grid-column: 4/9);
-            }
-            section.topBar .topNavBar>div{
                 display: grid;
                 grid-gap: 1%;
                 grid-template-columns: repeat(auto-fill,19.200%); /* 5 columns */
             }
-            section.topBar .topNavBar .navBarNav{
-                grid-column: 1/5;
-                display: grid;
-                grid-gap: 1%;
-                grid-template-columns: repeat(auto-fill, 24.250%); /* 4 columns */
-            }
-            section.topBar .topNavBar .navBarSearch{
-                grid-column: 5/6;
-            }
+            section.topBar .logoHolder{grid-column: 1/3;}
+            section.topBar .topNav{grid-column: 3/4; text-align: center;}
+            section.topBar .searchBox{grid-column: 4/6; margin-top:1.4em;}
 
-            .hidden{display: none;}
-            .icon{max-width: 1.5em; max-height: 1.5em; display: inline-block;}
-            .logo{width: 120px; height: 60px; padding: 0.25em;}
-
+            /* TOB BAR NAV IN MOBILE VERSION */
+            section.topBar .topNav label{
+                line-height: 60px;
+                font-size: 1.8em;
+            }
+            section.topBar .topNav nav a{
+                display: block;
+                margin: 0.75em auto;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
 
+
         <section class="topBar">
-            <div class="logoBar"><img class="logo" src="images/logo.svg" alt="Logo"/></div>
-            <div class="topNavBar">
+            <div><img class="logo" src="images/logo.svg" alt="Logo"/></div>
+            <div>
+                <div class="iconHolder" data-for="labelToggleShowCheckBox">
+                    <img class="icon xl menuIcon img2svg" src="images/iconHamburger.svg" alt="Menu Icon"/>
+                    <img class="icon xl closeIcon img2svg hidden" src="images/iconClose.svg" alt="Close Icon"/>
+                </div>
+                <nav class="topNav">
+                    <input type="checkbox" class="toggleShowCheckBox hidden"/>
+                    <a class="active" href="index.html"><span>Home</span></a>
+                    <a href="curriculum.html"><span>Programme Details</span></a>
+                    <a href="facts.html"><span>Facts</span></a>
+                    <a href="about.html"><span>About</span></a>
+                </nav>
+            </div>
+            <div class="searchBox inputIconGroup">
                 <div>
-                    <div class="navBarNav">
-                        <label class="toggleShowCheckbox" for="navToggleShowCheckbox">&#9776;</label>
-                        <nav>
-                            <input type="checkbox" class="hidden" id="navToggleShowCheckbox"/>
-                            <a href="index.html">Home</a>
-                            <a href="index.html">Curriculum</a>
-                            <a href="index.html">Facts</a>
-                            <a href="index.html">About</a>
-                        </nav>
+                    <div class="iconHolder">
+                        <img class="icon searchIcon img2svg" src="images/iconSearch.svg" alt="Search Icon"/>
                     </div>
-                    <div class="navBarSearch inputIconGroup">
-                        <div class="iconHolder">
-                            <img class="icon searchIcon img2svg" src="images/iconSearch.svg" alt="Search Icon"/>
-                        </div>
-                        <input type="text" name="search" value="" placeholder="Search"/>
+                <input type="text" name="search" value="" placeholder="Search"/>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="topBar">
+            <div class="logoHolder"><img class="logo" src="images/logo.svg" alt="logo"/></div>
+            <div class="topNav">
+                <label class="toggleShowCheckbox" for="navToggleShowCheckbox"></label>
+                <div class="toggleShowCheckBox" data-for="navToggleShowCheckbox">
+                    <div class="iconHolder">
+                        <img class="icon hidden menuIcon img2svg" src="images/iconHamburger.svg" alt="Menu Icon"/>
+                        <img class="icon closeIcon img2svg" src="images/iconClose.svg" alt="Close Icon"/>
                     </div>
                 </div>
+                <nav>
+                    <input type="checkbox" class="hidden" id="navToggleShowCheckbox"/>
+                    <a href="index.html">Home</a>
+                    <a href="index.html">Curriculum</a>
+                    <a href="index.html">Facts</a>
+                    <a href="index.html">About</a>
+                </nav>
+            </div>
+            <div class="searchBox inputIconGroup">
+                <div class="iconHolder">
+                    <img class="icon searchIcon img2svg" src="images/iconSearch.svg" alt="Search Icon"/>
+                </div>
+                <input type="text" name="search" value="" placeholder="Search"/>
             </div>
         </section>
 

@@ -13,8 +13,8 @@ loadjs(scripts);
 
 //SCRIPT LOADER
 let styles = [
-    "styles/svg.css",
-    "styles/styletile.css"
+    "styles/styletile.css",
+    "styles/general.css"
 ];
 function loadcss(listOfStyle){
     listOfStyle.forEach(function(item){
