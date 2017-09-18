@@ -3,7 +3,8 @@ section, main, header, footer, .topNavHolder,img{border: 1px solid #DEDEDE;}
 body{font-size: 13px; font-family: Roboto-Light;}
 a{text-decoration: none;}
 img{width: 100%; display: block;}
-li{list-style: none;}
+li{list-style: none; margin: 0.5em 0em;}
+li.noStyle{list-style: none !important; padding: 0.5em 0em; margin: 0.5em 0em;}
 
 /* TOP BAR */
 .topBar{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 49.5%);}

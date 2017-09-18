@@ -177,8 +177,8 @@ let content = [
                 }
             },
             {
-                menuItem:"Title and Information 2",
-                header: "Title and Information 2",
+                menuItem:"Content Summary",
+                header: "Content Summary",
                 longContent:{
                     div_1:{
                         attribute:{},
