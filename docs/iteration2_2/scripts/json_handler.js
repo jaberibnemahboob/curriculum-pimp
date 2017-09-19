@@ -1,11 +1,16 @@
+/* ISSUES NEED TO RESOLVE */
+// 1. MULTIPLE ATTRIBUTE IS NOT COMMING BECUASE YOU DIDN'T JOIN THE ARRAY OF ATTRIBUTE VALUE PAIR
+// 2. IN MAIN PAGE LONG CONTENT ONLY ONE PARAGRAPH IS SHOWING, WHY?
+
+
 let pageContent = document.querySelector('.pageContent');
 let subSectionContent;
 let pageTemplate = document.querySelector('.pageTemplate').content;
 let subSectionTemplate = document.querySelector('.subSectionTemplate').content;
 let dataSource = "data/json.json"
 
-function getData(link, pageID){
-    fetch(link).then(function(response){
+function getData(pageID){
+    fetch(dataSource).then(function(response){
         return response.json();
     }).then(function(json){
         return show(json, pageID);
@@ -52,7 +57,7 @@ function show(json, pageID){
 
         //add a submenu for each in sideBarMenu
         document.querySelector(".sideBarMenu").innerHTML = document.querySelector(".sideBarMenu").innerHTML +
-            '<a' + ((pageID == pageCont.pageID)?' class = "active"':'') + ' href="#" onclick="getData(dataSource, \''+ pageCont.pageID +'\');"><span>' + pageCont.menuItem + '</span></a>';
+            '<a' + ((pageID == pageCont.pageID)?' class = "active"':'') + ' href="#" onclick="getPage(\''+ pageCont.pageID +'\');"><span>' + pageCont.menuItem + '</span></a>';
     });
 }
 function jsonObject2html(object, returnData){
@@ -81,4 +86,11 @@ function getKeyValuePairs(object){
         v = v+key+'="'+object[key]+'"';
     }
     return v;
+}
+
+function getPage(pageID){
+    getData(pageID);
+    setTimeout(function(){
+        initialJSEffect();
+    },1000);
 }

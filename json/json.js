@@ -8,52 +8,7 @@ let content = [
             p_1:{
                 attribute:{},
                 value:{
-                    content: "The objective of the programme is to provide graduates with the qualifications  needed to inde-pendently design, plan, realise and manage multimedia tasks and to assist in the implementation, administration and maintenance of multimedia productions.",
-                    replacement: {}
-                }
-            },
-            p_2:{
-                attribute:{},
-                value:{
-                    textContent: "During your studies you are in close contact with businesses when creating projects and writing papers in cooperation with a specific company or organisation. During the studies you will have an internship period at a company in order to mobilise your competencies in practice. We cooperate with a wide range of business types including agencies, companies, and cultural organisations.",
-                    replacement: {}
-                }
-            },
-            p_3:{
-                attribute:{},
-                value:{
-                    content: "The acquisition from this programme by each graduate in area of Knowledge, Skill and Competencies are:",
-                    replacement: {}
-                }
-            },
-            ul_1:{
-                attribute:{},
-                value:{
-                    content: {
-                        li_1:{
-                            attribute:{
-                                class: "noStyle bold"
-                            },
-                            value:{
-                                content: "Knowledge:",
-                                replacement: {}
-                            }
-                        },
-                        li_2:{
-                            attribute:{},
-                            value:{
-                                content: "practice and key applied theory and method relevant to analysis, ideation, design, planning, realisation and management of multimedia tasks as well as the impl e-mentation, administration and maintenance of multimedia productions",
-                                replacement: {}
-                            }
-                        },
-                        li_3:{
-                            attribute:{},
-                            value:{
-                                content: "understanding of interdisciplinary multimedia issues in  relation to both individual and team-based project work",
-                                replacement: {}
-                            }
-                        },
-                    },
+                    content: "The objective of the programme is to provide graduates with the qualifications (Knowledge, Skills &amp; Competencies) needed to independently design, plan, realise and manage multimedia tasks and to assist in the implementation, administration and maintenance of multimedia productions.",
                     replacement: {}
                 }
             }
@@ -177,8 +132,115 @@ let content = [
                 }
             },
             {
-                menuItem:"Content Summary",
-                header: "Content Summary",
+                menuItem:"Course Content",
+                header: "Course Content",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "This course focuses on:-",
+                                        replacement: {}
+                                    }
+                                },
+                                ul_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: {
+                                            li_1:{
+                                                attribute:{
+                                                    class: ""
+                                                },
+                                                value:{
+                                                    content: "Frontend Development",
+                                                    replacement: {}
+                                                }
+                                            },
+                                            li_2:{
+                                                attribute:{
+                                                    class: ""
+                                                },
+                                                value:{
+                                                    content: "Digital Design Principles",
+                                                    replacement: {}
+                                                }
+                                            },
+                                            li_3:{
+                                                attribute:{
+                                                    class: ""
+                                                },
+                                                value:{
+                                                    content: "User Interface Design (UI)",
+                                                    replacement: {}
+                                                }
+                                            },
+                                            li_4:{
+                                                attribute:{
+                                                    class: ""
+                                                },
+                                                value:{
+                                                    content: "Design Processes",
+                                                    replacement: {}
+                                                }
+                                            },
+                                            li_5:{
+                                                attribute:{
+                                                    class: ""
+                                                },
+                                                value:{
+                                                    content: "Project Management",
+                                                    replacement: {}
+                                                }
+                                            },
+                                            li_6:{
+                                                attribute:{
+                                                    class: ""
+                                                },
+                                                value:{
+                                                    content: "User Experience Design (UX)",
+                                                    replacement: {}
+                                                }
+                                            }
+                                        },
+                                        replacement: {}
+                                    }
+                                }
+                            },
+                            replacement: {}
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        pageID: "courseDetails",
+        menuItem: "Course Details",
+        header: "Course Details",
+        shortContent:"The programme is a full-time programme equating to two student full-time equivalents. One student full-time equivalent corresponds to one year of full time-time study. One student full-time equivalent corresponds to 60 ECTS credits in the European Credit Transfer System (ECTS). The programme thus equates to a total of 120 ECTS credits.",
+        longContent:{
+            p_1:{
+                attribute:{},
+                value:{
+                    content: "The programme is a level-5 programme in the Danish Qualifications Framework for Higher Education.",
+                    replacement: {}
+                }
+            },
+            p_2:{
+                attribute:{},
+                value:{
+                    textContent: "During your studies you are in close contact with businesses when creating projects and writing papers in cooperation with a specific company or organisation. During the studies you will have an internship period at a company in order to mobilise your competencies in practice. We cooperate with a wide range of business types including agencies, companies, and cultural organisations.",
+                    replacement: {}
+                }
+            }
+        },
+        subSectionItems:[
+            {
+                menuItem:"Programme Structure",
+                header: "Programme Structure",
                 longContent:{
                     div_1:{
                         attribute:{},
