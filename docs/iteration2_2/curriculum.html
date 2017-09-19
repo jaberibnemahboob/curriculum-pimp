@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="styles/wf.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <main>
+
+            <section class="topBar">
+                <div class="logoHolder">
+                    <img class="logo" src="images/logo.png" alt="Logo"/>
+                </div>
+                <div class="topNavHolder">
+                    <label class="burgerIco cursorPointer" for="burgerCheckbox">&#9776;</label>
+                    <nav class="topNav">
+                        <input type="checkbox" class="burgerCheckbox" name="burgerCheckbox" id="burgerCheckbox"/>
+                        <label class="burgerIco cursorPointer" for="burgerCheckbox">&#x2715;</label>
+                        <a href="index.html"><span>Home</span></a>
+                        <a class="active" href="curriculum.html"><span>Curriculum</span></a>
+                        <a href="facts.html"><span>Facts</span></a>
+                        <a href="about.html"><span>About</span></a>
+                        <input type="text" value="" placeholder="Search"/>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="mainContent">
+                <aside class="">
+                    <div class="sideBarNavHolder">
+                        <nav class="sideBarMenu">
+                            <a href="#">Section</a>
+                            <a href="#">Section</a>
+                            <a href="#">Section</a>
+                            <a href="#">Section</a>
+                            <a href="#">Section</a>
+                            <a href="#">Section</a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <article class="pageContent">
+                </article>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <h4>Footer Goes Here</h4>
+        </footer>
+
+
+
+        <template class="subSectionTemplate">
+            <div class="info">
+                <div class="shortInfo cursorPointer" data-type="label" data-for="moreInfoCheckbox1">
+                    <div class="infoMenuHolder uppercase">
+                        <div class="iconHolder"><img class="icon" src="images/icon.png" alt="icon"/></div>
+                        <h2 class="data_header"></h2>
+                    </div>
+                    <div class="infoMenuArrow uppercase"><span>&#9660;</span></div>
+                </div>
+                <div>
+                    <input type="checkbox" class="toggleShowCheckbox" id="moreInfoCheckbox1"/>
+                    <p class="emptyElem"></p>
+                    <div class="longInfo data_longContent"></div>
+                </div>
+            </div>
+        </template>
+        <template class="pageTemplate">
+                <div class="">
+                    <div class="breifData">
+                        <h1 class="data_header"></h1>
+                        <div class="data">
+                            <p class="bold data_shortContent"></p>
+                        </div>
+                        <div class="moreData">
+                            <input class="hidden toggleShowCheckbox" type="checkbox" id="moreDataCheckbox"/>
+                            <p><a href="#"><label class="cursorPointer" for="moreDataCheckbox">Read more &rarr;</label></a></p>
+                            <div class="data_longContent"></div>
+                            <p><a href="#"><label class="cursorPointer" for="moreDataCheckbox">&larr; Read less</label></a></p>
+                        </div>
+                    </div>
+                    <div class="summaryData">
+                        <div class="infoBox data_subSectionItems"></div>
+                    </div>
+                </div>
+        </template>
+
+
+
+        <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript" src="scripts/json_handler.js"></script>
+        <script type="text/javascript">
+            getData(dataSource, "courseOverview");
+            setTimeout(function(){
+                initialJSEffect();
+            },1000);
+        </script>
+    </body>
+</html>

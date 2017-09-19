@@ -1,0 +1,8 @@
+/* TOP NAV */
+.topNav a{display: block; margin: 0.7em auto; text-align: center;}
+.topNav div{margin: 0 auto; text-align: center;}
+
+/* INPUT FIELD WITH ICON */
+.inputIconGroup{position: relative; display: inline-block;}
+.inputIconGroup input{position: relative; background: none; border: 1px solid #DDDDDD; padding: 0.3em; width: 100%;}
+.inputIconGroup .iconHolder{position: absolute; top: 0; left: 0; width: 100%; text-align: right; padding: 0.3em;}
