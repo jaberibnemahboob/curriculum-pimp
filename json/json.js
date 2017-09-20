@@ -2040,5 +2040,228 @@ let content = [
                 }
             }
         ]
+    },
+    {
+        pageID: "internationalExchange",
+        menuItem: "International Exchange",
+        header: "International Exchange",
+        shortContent: "Student mobility is one of the key elements of internationalisation at KEA Copenhagen School of Design and Technology.",
+        longContent: {
+            p_1:{
+                attribute:{},
+                value:{
+                    content:"KEA welcomes over 100 semester exchange student seach year from partner institutions and sends the same number abroad.",
+                    replacement:{}
+                }
+            },
+            p_2:{
+                attribute:{},
+                value:{
+                    content:"These semester exchanges take place with European partners through the Erasmus+ programme, with Nordic partners (for example, Nord plus networks) and with overseas partners. Exchange with these institutions takes place through bilateral agreements.",
+                    replacement:{}
+                }
+            },
+            p_3:{
+                attribute:{},
+                value:{
+                    content:"In addition to semester exchange, KEA also engages in short-termmobility, receiving approximately 80 students each year - for example, to KEA's Charrette - and sending approximately 160 students - for example, to charrettes and short programmes organised in collaboration with partner institutions.",
+                    replacement:{}
+                }
+            },
+            p_4:{
+                attribute:{},
+                value:{
+                    content:"All students must participate in internships as part of their programme at KEA. Each year, approximately 150 KEA students choose to do their internship abroad, gaining valuable international experience as well as work experience. You can find more information in our _____designCateloge_____.",
+                    replacement:{
+                        _____designCateloge_____ : {
+                            a_1:{
+                                attribute:{
+                                    href: "http://www.kea.dk/en/en/student-mobility/incoming-exchange-students/design-course-catalog/",
+                                    target: "_blank"
+                                },
+                                value:{
+                                    content: "DESIGN COURSE CATALOGUE",
+                                    replacement:{}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        subSectionItems:[
+            {
+                menuItem:"Erasmus Program",
+                header:"Erasmus Program",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Celebrating its 25th anniversary in 2012, ERASMUS is the most successful student exchange programme in the world. Each year, more than 230,000 students study abroad thanks to the Erasmus programme. KEA holds an extended _____erasmusChater_____. The Charter aims to guarantee the quality of the programme by setting certain fundamental principles, which are described in detail in KEA's _____erasmusPolicy_____.",
+                                        replacement: {
+                                            _____erasmusChater_____:{
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/fileadmin/user_upload/engelsk_forside/Student_Mobility/ERASMUS__UNIVERSITY_CHARTER_2014-2020.pdf",
+                                                        target:"_blank"
+                                                    },
+                                                    value:{
+                                                        content: "ERASMUS University Charter",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            },
+                                            _____erasmusPolicy_____:{
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/fileadmin/user_upload/engelsk_forside/Student_Mobility/ERASMUS__POLICY_STATEMENT.pdf",
+                                                        target:"_blank"
+                                                    },
+                                                    value:{
+                                                        content: "ERASMUS Policy Statement",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            },
+            {
+                menuItem:"Incoming Exchange Student",
+                header:"Incoming Exchange Student",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "We welcome exchange students with appropriate educational backgrounds who wish to attend one of our international programmes for one or more semesters. You must be a regular student at one of our international _____partnerInstitutions_____. For more information and how to apply please follow _____link_____.",
+                                        replacement: {
+                                            _____partnerInstitutions_____:{
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/student-mobility/partner-institutions/",
+                                                        target:"_blank"
+                                                    },
+                                                    value:{
+                                                        content: "partner institutions",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            },
+                                            _____link_____:{
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/student-mobility/incoming-exchange-students/",
+                                                        target:"_blank"
+                                                    },
+                                                    value:{
+                                                        content: "here",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            },
+            {
+                menuItem:"Outgoing Exchange Student",
+                header:"Outgoing Exchange Student",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "As a full degree KEA student, you have the opportunity to study for a semester at one of our international partner institutions. You can study one semester abroad at one of our _____partnerInstitutions_____ as part of your Danish degree without paying a fee at the foreign university. For more information and how to apply please follow _____link_____.",
+                                        replacement: {
+                                            _____partnerInstitutions_____:{
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/student-mobility/partner-institutions/",
+                                                        target:"_blank"
+                                                    },
+                                                    value:{
+                                                        content: "partner institutions",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            },
+                                            _____link_____:{
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/student-mobility/outgoing-exchange-and-study-abroad/",
+                                                        target:"_blank"
+                                                    },
+                                                    value:{
+                                                        content: "here",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            },
+            {
+                menuItem:"International Internships",
+                header:"International Internships",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Internships are an integrated part of all full time education programmes at KEA and count for 15 or 30 ECTS, depending on the programme. Doing your internship abroad is a unique opportunity to develop professionally and adding international competencies to your CV, which may turn out to be of great value in your future job seeking. For more information please visit _____link_____",
+                                        replacement: {
+                                            _____link_____:{
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/student-mobility/international-internships/",
+                                                        target:"_blank"
+                                                    },
+                                                    value:{
+                                                        content: "here",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            }
+        ]
     }
 ];
