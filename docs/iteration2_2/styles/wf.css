@@ -1,5 +1,5 @@
 *{box-sizing: border-box; margin: 0; padding: 0;}
-section, main, header, footer, .topNavHolder,img{border: 1px solid #DEDEDE;}
+/*section, main, header, footer, .topNavHolder,img{border: 1px solid #DEDEDE;}*/
 body{font-size: 13px; font-family: Roboto-Light;}
 a{text-decoration: none;}
 img{width: 100%; display: block;}
@@ -12,7 +12,7 @@ li{list-style: none;}
 .topBar .topNavHolder .burgerIco{}
 .topBar .topNavHolder .topNav{}
 .topBar .topNavHolder .topNav a{text-align: center; display: block; margin: 0.5rem; font-size: 1.6em; }
-.topBar .topNavHolder .topNav input{display: block; margin: 0.5rem auto;}
+.topBar .topNavHolder .topNav input{display: block; margin: 0.2frem auto;}
 .topBar .topNavHolder .topNav .burgerCheckbox{display: none;}
 .topBar .topNavHolder .topNav .burgerCheckbox ~ a, .topBar .topNavHolder .topNav .burgerCheckbox ~ .burgerIco{display: none;}
 .topBar .topNavHolder .topNav .burgerCheckbox ~ input{display: none; width: 90%;}
@@ -50,13 +50,13 @@ li{list-style: none;}
 
 /* PAGE DATA */
 .infoBox .info{margin: 0.5rem 0rem;}
-.infoBox .shortInfo{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 12%); padding: 0.2rem;}
+.infoBox .shortInfo{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 12%); padding: 0.2rem 1rem;}
 .infoBox .shortInfo{min-height: 50px;}
 .infoBox .shortInfo .iconHolder{display: inline-block; width: 50px; padding-top: 0.5rem;}
 .infoBox .shortInfo .infoMenuHolder{grid-column: 1/12; display: inline-block;}
-.infoBox .shortInfo .infoMenuHolder h2{display: inline-block; padding-left: 1rem;}
+.infoBox .shortInfo .infoMenuHolder h2{display: inline-block; padding-left: 2rem;}
 .infoBox .shortInfo .infoMenuArrow{grid-column: 12/13; text-align: right; padding-top: 0.75rem;}
-.infoBox .shortInfo .infoMenuArrow span{line-height: 1em; font-size: 1em;}
+.infoBox .shortInfo .infoMenuArrow span{line-height: 1em; font-size: 1.5em; padding-right: 2rem;}
 .longInfo{padding: 0.3rem; margin-top: 1rem; min-height: 150px;}
 .summaryData{margin-top: 5rem;}
 
@@ -67,7 +67,7 @@ li{list-style: none;}
     .topBar .topNavHolder{grid-column: 2/5;}
     .topBar .topNavHolder .topNav .burgerCheckbox ~ a, .topBar .topNavHolder .topNav .burgerCheckbox ~ input{display: block;}
     .topBar .topNavHolder .burgerIco{display: none;}
-    .topBar .topNavHolder .topNav{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 15%); background: rgba(255,255,255,0.7);}
+    .topBar .topNavHolder .topNav{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 15%); /*background: rgba(255,255,255,0.7);*/}
     .topBar .topNavHolder .topNav input{grid-column: 5/7;}
 
     section.mainContent{

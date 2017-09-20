@@ -6,6 +6,7 @@
 }
 
 @font-face {font-family: BebasNeue-Bold; src: url(../fonts/BebasNeue-Bold.otf);}
+@font-face {font-family: BebasNeue-Regular; src: url(../fonts/BebasNeue-Regular.otf);}
 @font-face {font-family: Roboto-Light; src: url(../fonts/Roboto-Light.ttf);}
 @font-face {font-family: Roboto-Medium; src: url(../fonts/Roboto-Medium.ttf);}
 @font-face {font-family: Roboto-Regular; src: url(../fonts/Roboto-Regular.ttf);}
@@ -13,7 +14,7 @@
 img{}
 article{padding: 2.5%;}
 a{color: var(--colorPalette1); font-family: Roboto-Regular; margin-bottom: 1rem;}
-nav a{font-family: BebasNeue-Bold; color: var(--colorPalette2);}
+nav a{font-family: BebasNeue-Regular; color: var(--colorPalette2);}
 nav input{font-family: Roboto-Light; font-size: 1em; color: var(--colorPalette3); text-align-last: end;
     padding-right: 10px;}
 h1{color: var(--colorPalette1); font-family: BebasNeue-Bold; font-size: 2.6em; text-transform: uppercase; margin-bottom: 1rem;}
@@ -65,23 +66,23 @@ textarea{min-height: 10em;}
 .pageForm>div>div:nth-child(2){grid-column: 2/5;}
 
 /* TOP NAV */
-.topNav{display: block; width: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); background: #ffffff;}
-nav a.active span, nav a:hover span{border-top: 2px solid var(--colorPalette1);}
+.topNav{display: block; width: 100%; /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/ background: none;}
+nav a.active span, nav a:hover span{border-bottom: 3px solid var(--colorPalette1);}
 .burgerIco{font-size: 2.3em;}
 
 /* SIDE BAR NAV */
-.sideBarNavHolder nav{box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); border: none;}
-.sideBarNavHolder nav a{display: block; font-size: 1.2em; text-align: right; margin: 0.5rem 0.1rem;}
+.sideBarNavHolder nav{/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/ border: none; background:rgba(0,0,0,0);}
+.sideBarNavHolder nav a{display: block; font-size: 1.4em; text-align: right; margin: 0.5rem 0.5rem;}
 
 /* SIDE BAR SHADOW BOX */
 .sideBar{margin-top: 5em;}
-.sideBarShadowBox{box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); border: none; padding: 1%;}
+.sideBarShadowBox{/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); border: none;*/ padding: 1%;}
 
 /* PAGE CONTENT */
-.infoBox .info{border: 1px solid #DEDEDE; border-radius: 4px;}
+.infoBox .info{/*border: 1px solid #DEDEDE;*/ border: none; border-radius: 4px;}
 .infoBox .longInfo{padding: 2%;}
 .infoBox .longInfo p.bold{display: inline; text-decoration: underline;}
-.infoBox .shortInfo{box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); border: none;}
+
 
 
 /* HOME PAGE CROUSEL */
@@ -94,3 +95,50 @@ nav a.active span, nav a:hover span{border-top: 2px solid var(--colorPalette1);}
 .homePage .carousel .imgBox{width: 100%; height: 100%; position: absolute;}
 .homePage .carousel .navBox{width: 2%; position: absolute; margin: 18rem 0rem; margin-left: 97%;}
 .homePage .carousel .navBox li{width: 0.6rem; height: 0.6rem; margin: 0.5rem 0rem; display: block; border: 1px solid var(--colorPalette2); background: var(--colorPalette4); border-radius: 50%;}
+
+/*Styling subSection box - Maria*/
+
+.shortInfo {
+    border-radius: 25px;
+    background: linear-gradient(to left, rgba(234,176,33,0.2), rgba(234,176,33,1));
+    padding: 0em 0.5em;
+    margin-top: 1.5rem;
+    }
+
+h1 {
+    letter-spacing: 5px;
+   }
+
+.topNav a{
+   letter-spacing: 0.8px;
+   }
+
+.sideBarNavHolder nav a{
+   letter-spacing: 1px;
+   padding: 0.3rem;
+  }
+
+footer{
+   background-color: var(--colorPalette3);
+  }
+
+nav input{
+     border-radius: 25px;
+     border: 3px solid var(--colorPalette2);
+   }
+
+.logoHolder {
+    margin-left: 50px;
+   }
+
+body {
+   background: url(../images/background_pic.png) no-repeat center center fixed;
+   background-size: cover;
+
+}
+
+nav input {
+   background: rgba(0,0,0,0);
+}
+
+
