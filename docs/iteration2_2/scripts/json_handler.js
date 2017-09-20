@@ -103,5 +103,5 @@ function getPage(pageID){
     getData(pageID);
     setTimeout(function(){
         initialJSEffect();
-    },1000);
+    },500);
 }

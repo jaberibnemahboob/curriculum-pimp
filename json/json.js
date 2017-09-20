@@ -1361,12 +1361,169 @@ let content = [
                                 p_2:{
                                     attribute:{},
                                     value:{
-                                        content: "Non-EU applicants are required to pay an application fee in order for KEA to process their application. For more information regarding the application fee, please check this _____link_____",
+                                        content: "The programme is entitled to the state education support (SU) for Danish citizens. Read more at _____suLink_____",
                                         replacement: {
                                             _____link_____ : {
                                                 a_1:{
                                                     attribute:{
                                                         href: "http://www.kea.dk/en/en/study-at-kea/new-applicant/application-fee-non-eu-applicants/",
+                                                        target: "_blank"
+                                                    },
+                                                    value:{
+                                                        content: "link",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                p_3:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Tution fee terms for the following year is given below:",
+                                        replacement: {}
+                                    }
+                                },
+                                ul_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: {
+                                            li_1:{
+                                                attribute:{},
+                                                value:{
+                                                    content: "Nordic/EU/EEA students: Free of charge",
+                                                    replacement: {}
+                                                }
+                                            },
+                                            li_2:{
+                                                attribute:{},
+                                                value:{
+                                                    content: "Non-EU citizens must pay a tuition fee of 5,400 Euro per semester",
+                                                    replacement: {}
+                                                }
+                                            }
+                                        },
+                                        replacement: {}
+                                    }
+                                },
+                                p_4:{
+                                    attribute:{},
+                                    value:{
+                                        content: "For further information please visit _____link_____.",
+                                        replacement: {
+                                            _____link_____ : {
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/programmes/academy-profession-degree-ap-programmes/ap-in-multimedia-design-and-communication/facts/",
+                                                        target: "_blank"
+                                                    },
+                                                    value:{
+                                                        content: "here",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    },
+                    div_3:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                 p_1:{
+                                    attribute:{
+                                        class: "bold"
+                                    },
+                                    value:{
+                                        content: "Expenses for academic purpose",
+                                        replacement: {}
+                                    }
+                                },
+                                p_2:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Books (approximately EUR 300 during the course of two years), and your own notebook PC or MAC which supports 5GHz (802.11a) in order to avoid problems with KEA's network.",
+                                        replacement: {}
+                                    }
+                                },
+                                p_3:{
+                                    attribute:{},
+                                    value:{
+                                        content: "You will need to install Adobe Creative Cloud onto your computer. You will also need software to write text documents, create spreadsheets and make slide presentations. You can purchase/subscribe to a paid package, such as Microsoft Office or choose one of the free alternatives, such as Google Docs. ",
+                                        replacement: {}
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            },
+            {
+                menuItem:"Scholarship Opportunity",
+                header:"Scholarship Opportunity",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "KEA receives a limited number of government scholarships each year to fund highly qualified full-degree students from non-EU/EEA countries and Switzerland.",
+                                        replacement: {}
+                                    }
+                                },
+                                p_2:{
+                                    attribute:{},
+                                    value:{
+                                        content: "In order to be eligible for a scholarship you must be:",
+                                        replacement: {}
+                                    }
+                                },
+                                ul_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: {
+                                            li_1:{
+                                                attribute: {},
+                                                value:{
+                                                    content: "A citizen of a country outside the EU, the European Economic Area or Switzerland",
+                                                    replacement:{}
+                                                }
+                                            },
+                                            li_2:{
+                                                attribute: {},
+                                                value:{
+                                                    content: "Enrolled in a full degree higher education program",
+                                                    replacement:{}
+                                                }
+                                            },
+                                            li_3:{
+                                                attribute: {},
+                                                value:{
+                                                    content: "Granted a time-limited residence permit in Denmark due to education",
+                                                    replacement:{}
+                                                }
+                                            }
+                                        },
+                                        replacement: {}
+                                    }
+                                },
+                                p_3:{
+                                    attribute:{},
+                                    value:{
+                                        content: "For further information you can visit _____link_____",
+                                        replacement: {
+                                            _____link_____ : {
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/study-at-kea/scholarship/",
                                                         target: "_blank"
                                                     },
                                                     value:{
