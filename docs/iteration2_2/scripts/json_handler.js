@@ -1,5 +1,4 @@
 /* ISSUES NEED TO RESOLVE */
-// 1. MULTIPLE ATTRIBUTE IS NOT COMMING BECUASE YOU DIDN'T JOIN THE ARRAY OF ATTRIBUTE VALUE PAIR
 // 2. IN MAIN PAGE LONG CONTENT ONLY ONE PARAGRAPH IS SHOWING, WHY?
 
 
@@ -7,7 +6,8 @@ let pageContent = document.querySelector('.pageContent');
 let subSectionContent;
 let pageTemplate = document.querySelector('.pageTemplate').content;
 let subSectionTemplate = document.querySelector('.subSectionTemplate').content;
-let dataSource = "data/json.json"
+let dataSource = "data/json.json";
+let yes = false;
 
 function getData(pageID){
     fetch(dataSource).then(function(response){
@@ -31,7 +31,9 @@ function show(json, pageID){
             //STEP 2: change data of page clone
             clone.querySelector(".data_header").textContent = pageCont.header;
             clone.querySelector(".data_shortContent").textContent = pageCont.shortContent;
+            if(pageID == "courseDetails") yes = true;
             clone.querySelector(".data_longContent").innerHTML = jsonObject2html(pageCont.longContent,'');
+            yes=false;
 
             //STEP 3: add subSection data
             subSectionContent = clone.querySelector(".data_subSectionItems");
@@ -63,17 +65,26 @@ function show(json, pageID){
 function jsonObject2html(object, returnData){
     //js always pass variable as value in function
     //however, passing an object means it's actually passing a reference not value
-
     for(let tagKey in object){
         if(object.hasOwnProperty(tagKey)){
-            //console.log(object[tagKey]);
             if(typeof (object[tagKey].value.content) == "object"){
-                returnData = returnData + '<' + tagKey.split("_")[0] + ' ' + getKeyValuePairs(object[tagKey].attribute) + '>' + jsonObject2html(object[tagKey].value.content, '') + '</' + tagKey.split("_")[0] + '>';
+                returnData = returnData + '<' + tagKey.split("_")[0] + getKeyValuePairs(object[tagKey].attribute) + '>' + jsonObject2html(object[tagKey].value.content, '') + '</' + tagKey.split("_")[0] + '>';
             }else if(typeof(object[tagKey].value.content) == "string"){
-                returnData = returnData + '<' + tagKey.split("_")[0] + ' ' + getKeyValuePairs(object[tagKey].attribute) + '>' + object[tagKey].value.content + '</' + tagKey.split("_")[0] + '>';
+                returnData = returnData + '<' + tagKey.split("_")[0] + getKeyValuePairs(object[tagKey].attribute) + '>' + object[tagKey].value.content + '</' + tagKey.split("_")[0] + '>';
             }else {
+                if(yes) console.log(object[tagKey]);
                 //DO NOTHING
                 //IGNORE THIS ONE
+            }
+
+
+            //get the replacement
+            if(typeof (object[tagKey].value.replacement) == "object"){
+                for(let replacementKey in object[tagKey].value.replacement){
+                    if(object[tagKey].value.replacement.hasOwnProperty(replacementKey)){
+                        returnData = returnData.replace(replacementKey, jsonObject2html(object[tagKey].value.replacement[replacementKey], ''));
+                    }
+                }
             }
         }
     }
@@ -83,7 +94,7 @@ function jsonObject2html(object, returnData){
 function getKeyValuePairs(object){
     let v = '';
     for(let key in object){
-        v = v+key+'="'+object[key]+'"';
+        v = v +' '+ key + '="' + object[key]+ '"';
     }
     return v;
 }
@@ -92,5 +103,5 @@ function getPage(pageID){
     getData(pageID);
     setTimeout(function(){
         initialJSEffect();
-    },1000);
+    },500);
 }
