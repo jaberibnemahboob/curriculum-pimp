@@ -22,6 +22,7 @@ h2{color: var(--colorPalette2); font-family: Roboto-Medium; font-size: 1.2em; ma
 p{color: var(--colorPalette2); font-family: Roboto-Light; font-size: 1em; margin-bottom: 1rem; text-align: justify;}
 ul{padding-left: 1.5em;}
 li{list-style: circle;}
+
 button, .btn, .button{
     display: block;
     border: none;
