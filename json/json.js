@@ -1542,6 +1542,281 @@ let content = [
                 }
             }
         ]
+    },
+    {
+        pageID: "admission",
+        menuItem: "Admission",
+        header: "Admission",
+        shortContent: "Get everything you need to know about the admission in the KEA MMD courses.",
+        longContent: {
+            p_1:{
+                attribute:{},
+                value:{
+                    content:"Non-Danish citizens who do not have a Danish entrance examination are eligible for admission if they have qualifications recognized as being comparable to Danish entrance qualifications.",
+                    replacement:{}
+                }
+            },
+            p_2:{
+                attribute:{},
+                value:{
+                    content:"For an official assessment of your qualifications, visit _____ufmlink_____. The assessment briefly states what your qualifications correspond to in Denmark and will improve your application. The assessment serves only as a guideline since the individual institution in Denmark is responsible for its own admissions.",
+                    replacement:{
+                        _____ufmlink_____:{
+                            a_1:{
+                                attribute:{
+                                    href: "http://ufm.dk/en/recognition",
+                                    target: "_blank"
+                                },
+                                value:{
+                                    content: "ufm.dk/en/recognition"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            p_3:{
+                attribute:{},
+                value:{
+                    content:"For admission in MMD program we will require certified copies of your educational qualification, that is you must provide copies with original stamps and signatures, or have two people who are not related to your sign the back of the copy with their name, address and birth date.",
+                    replacement:{}
+                }
+            }
+        },
+        subSectionItems:[
+            {
+                menuItem:"Requirements",
+                header:"Requirements",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute: {
+                                        class: "bold"
+                                    },
+                                    value:{
+                                        content: "English",
+                                        replacement: {}
+                                    }
+                                },
+                                p_2:{
+                                    attribute:{},
+                                    value:{
+                                        content: "All applicants must have passed English at a level equivalent to a Danish Upper Secondary education B-level.",
+                                        replacement: {}
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    },
+                    div_2:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute: {
+                                        class: "bold"
+                                    },
+                                    value:{
+                                        content: "Previous Education",
+                                        replacement: {}
+                                    }
+                                },
+                                p_2:{
+                                    attribute:{},
+                                    value:{
+                                        content: "An education equivalent to a Danish upper secondary education or relevant vocational education is required (English and Maths must be included).",
+                                        replacement: {}
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    },
+                    div_3:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute: {
+                                        class: "bold"
+                                    },
+                                    value:{
+                                        content: "Mathematics",
+                                        replacement: {}
+                                    }
+                                },
+                                p_2:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Mathematics C-level is required in order to apply for the AP Degree in Multimedia Design and Communication. The Mathematics C-level is represented by 125 hours during the last three years of upper-secondary school (equivalent to the Danish C-level of a Danish upper-secondary examination",
+                                        replacement: {}
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            },
+            {
+                menuItem:"Application Fees",
+                header:"Application Fees",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Non-EU applicants are required to pay an application fee in order for KEA to process their application. For more information regarding the application fee, please check this _____link_____",
+                                        replacement: {
+                                            _____link_____ : {
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/study-at-kea/new-applicant/application-fee-non-eu-applicants/",
+                                                        target: "_blank"
+                                                    },
+                                                    value:{
+                                                        content: "link",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            },
+            {
+                menuItem:"How to Apply",
+                header:"How to Apply",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Summer-intake: All applicants must apply online on _____optagelselink_____.",
+                                        replacement: {
+                                            _____optagelselink_____ : {
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.optagelse.dk",
+                                                        target: "_blank"
+                                                    },
+                                                    value:{
+                                                        content: "www.optagelse.dk",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                p_2:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Winter-intake: All applicants have to apply online on www.kea.dk through following _____applicationlink_____.",
+                                        replacement: {
+                                            _____applicationlink_____ : {
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "https://pocloudwesteurope.crm.powerobjects.net/powerwebform/powerwebform.aspx?t=vreFsKvp0USJXcTvdEsBvGIAMAA4ADUAYgA3AGIAZQBlADkAYQBiADQANABkADEAOAA5ADUAZABjADQAZQBmADcANAA0AGIAMAAxAGIAYwA%3D&formId=powf_8FA2FFE7BB36E5118110C4346BAD81DC&tver=2013",
+                                                        target: "_blank"
+                                                    },
+                                                    value:{
+                                                        content: "Application Form",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                p_3:{
+                                    attribute:{},
+                                    value:{
+                                        content: "Please check _____moreinfolink_____ for more information on how to apply.",
+                                        replacement: {
+                                            _____moreinfolink_____ : {
+                                                a_1:{
+                                                    attribute:{
+                                                        href: "http://www.kea.dk/en/en/study-at-kea/new-applicant/how-to-apply-ap-ba-degrees/",
+                                                        target: "_blank"
+                                                    },
+                                                    value:{
+                                                        content: "here",
+                                                        replacement:{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            },
+            {
+                menuItem:"Application Semester and Deadline",
+                header:"Application Semester and Deadline",
+                longContent:{
+                    div_1:{
+                        attribute:{},
+                        value:{
+                            content:{
+                                p_1:{
+                                    attribute:{
+                                        class: "bold"
+                                    },
+                                    value:{
+                                        content: "For Summer-intake",
+                                        replacement: {}
+                                    }
+                                },
+                                p_2:{
+                                    attribute:{},
+                                    value:{
+                                        content: "All applicants can apply from February 1st. <br/> - For Danish Student - deadline is July 5th at 12:00 CET. <br/> - Overseas, European, Danish Student - deadline is March 15th at 12:00 CET",
+                                        replacement: {}
+                                    }
+                                },
+                                p_3:{
+                                    attribute:{
+                                        class: "bold"
+                                    },
+                                    value:{
+                                        content: "For Winter-intake",
+                                        replacement: {}
+                                    }
+                                },
+                                p_4:{
+                                    attribute:{},
+                                    value:{
+                                        content: "All applicants can apply from September 15th. <br/> - For Danish Student - deadline is December 1st at 12:00 CET. <br/> - Overseas, European, Danish Student - deadline is October 15th at 12:00 CET",
+                                        replacement: {}
+                                    }
+                                }
+                            },
+                            replacement:{}
+                        }
+                    }
+                }
+            }
+        ]
     }
 ];
 console.log(content);
