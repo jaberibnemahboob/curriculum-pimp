@@ -80,5 +80,6 @@ li{list-style: none;}
             "art art art art art as as as";
     }
     section.mainContent aside{grid-area: as;}
+    section.mainContent aside nav{position: fixed;}
     section.mainContent article{grid-area: art;}
 }
