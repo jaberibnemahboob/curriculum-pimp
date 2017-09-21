@@ -1,0 +1,10 @@
+.twoput{border-radius: 25px; border: orange; background-color: orange; opacity: 0.9; margin-left: -10vw;;}
+
+
+.subput { padding: 1vw; border: 3px solid black; border-radius: 25px; font-family:BebasNeue-Bold; font-size: 1.3em; width: 10vw }
+
+
+
++ ~line 79 :
+
+.pageForm>div>div:nth-child(2){grid-column: 1/5;}
