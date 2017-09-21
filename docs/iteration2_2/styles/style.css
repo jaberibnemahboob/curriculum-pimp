@@ -124,8 +124,8 @@ h1 {
   }
 
 footer{
-   background-color: var(--colorPalette3);
-  }
+   background-color: var(--colorPalette3); height:23vh;
+   }
 
 nav input{
      border-radius: 25px;
@@ -142,8 +142,20 @@ body {
 
 }
 
-nav input {
-   background: rgba(0,0,0,0);
-}
+nav input {background: rgba(0,0,0,0);}
+
+.imgcol {display: grid; grid-gap: 5px; grid-template-columns: repeat(auto-fill,30%); width: 150px;}
+
+.imgcol img{max-width:20px;}
+
+.flex-grid { display: flex; flex-wrap: wrap; padding-top:30px;}
+
+.col {width: 20; padding-left:200px;}
+
+h4 {color: var(--colorPalette1); font-family: BebasNeue-Bold; font-size:1.2em;
+    letter-spacing: 3px; margin-bottom:20px; }
+
+p3{color: var(--colorPalette1); font-family: Roboto-Light; margin-top:30px;}
+
 
 

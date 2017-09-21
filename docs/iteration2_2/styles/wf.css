@@ -81,4 +81,12 @@ li{list-style: none;}
     }
     section.mainContent aside{grid-area: as;}
     section.mainContent article{grid-area: art;}
-}
+
+    .flex-grid {display: flex; margin-left:-20px;}
+
+    .col {padding-left:-100px;}
+
+    }
+
+
+
