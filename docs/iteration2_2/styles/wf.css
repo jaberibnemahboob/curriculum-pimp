@@ -83,11 +83,20 @@ li{list-style: none;}
     section.mainContent aside nav{position: fixed;}
     section.mainContent article{grid-area: art;}
 
+
+
+
+}
+
+@media screen and (max-width: 764px){
+
     .flex-grid {display: flex; margin-left:-20px;}
 
-    .col {padding-left:-100px;}
+    .col {padding-left: 60px !important;}
 
+    footer{
+     height:30vh;
     }
 
-
+}
 
