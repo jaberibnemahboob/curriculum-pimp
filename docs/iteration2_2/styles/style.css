@@ -100,6 +100,7 @@ nav a.active span, nav a:hover span{border-bottom: 3px solid var(--colorPalette1
 .homePage .carousel .imgBox{width: 100%; height: 100%; position: absolute;}
 .homePage .carousel .carouselOverlay{width: 100%; height: 100%; position: absolute;}
 .homePageCarousel .imgBox img{position: absolute; height: 100%; opacity: 0;}
+.homePageCarousel img{position: absolute; height: 100%; }
 .homePage .carousel .navBox{width: 2%; position: absolute; margin: 18rem 0rem; margin-left: 97%;}
 .homePage .carousel .navBox li{width: 0.6rem; height: 0.6rem; margin: 0.5rem 0rem; display: block; border: 1px solid var(--colorPalette2); background: var(--colorPalette4); border-radius: 50%;}
 
