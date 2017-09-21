@@ -6,7 +6,7 @@ img{width: 100%; display: block;}
 li{list-style: none;}
 
 /* TOP BAR */
-.topBar{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 49.5%); margin-top: 0.5rem;}
+.topBar{display: grid; grid-gap: 1%; grid-template-columns: repeat(auto-fill, 49.5%); padding-top: 0.5rem;}
 .topBar .logoHolder{max-width: 160px; min-height: 60px;}
 .topBar .topNavHolder{top: 0; left: 0; text-align: right;}
 .topBar .topNavHolder .burgerIco{}
