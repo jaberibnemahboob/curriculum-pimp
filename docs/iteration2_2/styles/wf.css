@@ -94,9 +94,7 @@ li{list-style: none;}
 
     .col {padding-left: 60px !important;}
 
-    footer{
-     height:30vh;
-    }
+    .col:nth-child(2){margin-top: 2em;}
 
 }
 
