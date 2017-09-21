@@ -17,6 +17,7 @@ let content = [
             {
                 menuItem:"Title and Information",
                 header: "Title and Information",
+                iconText: "Ti",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -134,6 +135,7 @@ let content = [
             {
                 menuItem:"Course Content",
                 header: "Course Content",
+                iconText: "Cc",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -241,6 +243,7 @@ let content = [
             {
                 menuItem:"Programme Structure",
                 header: "Programme Structure",
+                iconText: "Ps",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -384,6 +387,7 @@ let content = [
             {
                 menuItem: "Core Areas",
                 header: "Core Areas",
+                iconText: "Ca",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -774,6 +778,7 @@ let content = [
             {
                 menuItem: "Semester Overview",
                 header: "Semester Overview",
+                iconText: "So",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1014,6 +1019,7 @@ let content = [
             {
                 menuItem:"Exam & Assessment",
                 header: "Exam & Assessment",
+                iconText: "Ea",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1307,6 +1313,7 @@ let content = [
             {
                 menuItem:"Fees and Expenses",
                 header:"Fees and Expenses",
+                iconText: "Fe",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1467,6 +1474,7 @@ let content = [
             {
                 menuItem:"Scholarship Opportunity",
                 header:"Scholarship Opportunity",
+                iconText: "So",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1587,6 +1595,7 @@ let content = [
             {
                 menuItem:"Requirements",
                 header:"Requirements",
+                iconText: "Rq",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1665,6 +1674,7 @@ let content = [
             {
                 menuItem:"Application Fees",
                 header:"Application Fees",
+                iconText: "Af",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1699,6 +1709,7 @@ let content = [
             {
                 menuItem:"How to Apply",
                 header:"How to Apply",
+                iconText: "Ha",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1773,6 +1784,7 @@ let content = [
             {
                 menuItem:"Application Semester and Deadline",
                 header:"Application Semester and Deadline",
+                iconText: "Sd",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1870,6 +1882,7 @@ let content = [
             {
                 menuItem:"Erasmus Program",
                 header:"Erasmus Program",
+                iconText: "Ep",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1916,6 +1929,7 @@ let content = [
             {
                 menuItem:"Incoming Exchange Student",
                 header:"Incoming Exchange Student",
+                iconText: "Is",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -1962,6 +1976,7 @@ let content = [
             {
                 menuItem:"Outgoing Exchange Student",
                 header:"Outgoing Exchange Student",
+                iconText: "Os",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -2008,6 +2023,7 @@ let content = [
             {
                 menuItem:"International Internships",
                 header:"International Internships",
+                iconText: "Ii",
                 longContent:{
                     div_1:{
                         attribute:{},
@@ -2066,6 +2082,7 @@ let content = [
             {
                 menuItem:"JOB Opportunities",
                 header:"JOB Opportunities",
+                iconText: "Jo",
                 longContent:{
                     p_1:{
                         attribute:{},
@@ -2156,6 +2173,7 @@ let content = [
             {
                 menuItem:"Further Study Opportunities",
                 header:"Further Study Opportunities",
+                iconText: "So",
                 longContent:{
                     p_1:{
                         attribute:{},

@@ -44,6 +44,7 @@ function show(json, pageID){
                 let clone2 = subSectionTemplate.cloneNode(true);
 
                 //STEP 2: change data of subSection clone
+                clone2.querySelector(".iconTxt").textContent = subSectCont.iconText;
                 clone2.querySelector(".shortInfo").setAttribute("data-for","moreInfoCheckbox" + index);
                 clone2.querySelector('input[type="checkbox"]').setAttribute("id","moreInfoCheckbox" + index);
                 clone2.querySelector(".data_header").textContent = subSectCont.header;
