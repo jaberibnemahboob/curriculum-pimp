@@ -1366,11 +1366,11 @@ let content = [
                                             _____suLink_____ : {
                                                 a_1:{
                                                     attribute:{
-                                                        href: "http://www.kea.dk/en/en/study-at-kea/new-applicant/application-fee-non-eu-applicants/",
+                                                        href: "http://www.su.dk/English/Sider/foreign.aspx",
                                                         target: "_blank"
                                                     },
                                                     value:{
-                                                        content: "link",
+                                                        content: "www.su.dk",
                                                         replacement:{}
                                                     }
                                                 }
