@@ -1363,7 +1363,7 @@ let content = [
                                     value:{
                                         content: "The programme is entitled to the state education support (SU) for Danish citizens. Read more at _____suLink_____",
                                         replacement: {
-                                            _____link_____ : {
+                                            _____suLink_____ : {
                                                 a_1:{
                                                     attribute:{
                                                         href: "http://www.kea.dk/en/en/study-at-kea/new-applicant/application-fee-non-eu-applicants/",
