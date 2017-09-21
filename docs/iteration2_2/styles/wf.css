@@ -82,4 +82,21 @@ li{list-style: none;}
     section.mainContent aside{grid-area: as;}
     section.mainContent aside nav{position: fixed; right: 2em;}
     section.mainContent article{grid-area: art;}
+
+
+
+
 }
+
+@media screen and (max-width: 764px){
+
+    .flex-grid {display: flex; margin-left:-20px;}
+
+    .col {padding-left: 60px !important;}
+
+    footer{
+     height:30vh;
+    }
+
+}
+
