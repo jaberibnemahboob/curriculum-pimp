@@ -44,6 +44,7 @@ function show(json, pageID){
                 let clone2 = subSectionTemplate.cloneNode(true);
 
                 //STEP 2: change data of subSection clone
+                clone2.querySelector(".iconTxt").textContent = subSectCont.iconText;
                 clone2.querySelector(".shortInfo").setAttribute("data-for","moreInfoCheckbox" + index);
                 clone2.querySelector('input[type="checkbox"]').setAttribute("id","moreInfoCheckbox" + index);
                 clone2.querySelector(".data_header").textContent = subSectCont.header;
@@ -59,7 +60,7 @@ function show(json, pageID){
 
         //add a submenu for each in sideBarMenu
         document.querySelector(".sideBarMenu").innerHTML = document.querySelector(".sideBarMenu").innerHTML +
-            '<a' + ((pageID == pageCont.pageID)?' class = "active"':'') + ' href="#" onclick="getPage(\''+ pageCont.pageID +'\');"><span>' + pageCont.menuItem + '</span></a>';
+            '<a' + ((pageID == pageCont.pageID)?' class = "active"':'') + ' href="#" onclick="getPage(\''+ pageCont.pageID +'\');"><font style="font-size: 1.3em;">&gt;&nbsp;&nbsp;</font><span>' + pageCont.menuItem + '</span></a>';
     });
 }
 function jsonObject2html(object, returnData){

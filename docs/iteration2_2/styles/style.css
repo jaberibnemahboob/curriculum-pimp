@@ -10,6 +10,7 @@
 @font-face {font-family: Roboto-Light; src: url(../fonts/Roboto-Light.ttf);}
 @font-face {font-family: Roboto-Medium; src: url(../fonts/Roboto-Medium.ttf);}
 @font-face {font-family: Roboto-Regular; src: url(../fonts/Roboto-Regular.ttf);}
+@font-face {font-family: Roboto-Black; src: url(../fonts/Roboto-Black.ttf);}
 
 .noStyle{list-style: none;}
 .displayBlock{display: block;}
@@ -109,6 +110,7 @@ nav a.active span, nav a:hover span{border-bottom: 3px solid var(--colorPalette1
     padding: 0em 0.5em;
     margin-top: 1.5rem;
     }
+.shortInfo h2{margin-top: 0.8rem;}
 
 h1 {
     letter-spacing: 5px;
@@ -130,6 +132,7 @@ footer{
 nav input{
      border-radius: 25px;
      border: 3px solid var(--colorPalette2);
+     /*outline: none;*/
    }
 
 .logoHolder {
@@ -158,4 +161,6 @@ h4 {color: var(--colorPalette1); font-family: BebasNeue-Bold; font-size:1.2em;
 p3{color: var(--colorPalette1); font-family: Roboto-Light; margin-top:30px;}
 
 
-
+.iconHolder{position: relative;}
+.iconHolder .icon{position: absolute; width: 100%; top: 0; left: 0;}
+.iconHolder .iconTxt{position: absolute; top: 0; left: 0; text-align: center; font-family: "Roboto-Black"; color: #50515B; padding: 32% 27%;}
