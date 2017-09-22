@@ -21,21 +21,23 @@ let imgItems = document.querySelectorAll(".imgBox img");
 let currentItem;
 
 function changeImg(lastItem, nextItem){
-    lastItem.classList.remove("fadeIn");
-    lastItem.classList.add("fadeOut");
-    nextItem.classList.add("fadeIn");
-    currentItem = nextItem;
-    setTimeout(function(){
-        lastItem.classList.remove("fadeOut");
-    },1000);
+    if(lastItem != undefined){
+        lastItem.classList.remove("fadeIn");
+        lastItem.classList.add("fadeOut");
+        nextItem.classList.add("fadeIn");
+        currentItem = nextItem;
+        setTimeout(function(){
+            lastItem.classList.remove("fadeOut");
+        },1000);
 
-    setTimeout(function(){
-        if(carouselCount>0){
-            changeImg(imgItems[carouselCount], imgItems[(carouselCount - 1)]);
-        }else changeImg(imgItems[0], imgItems[4]);
-        carouselCount--;
-        if(carouselCount <= 0) carouselCount = 4;
-    },5000);
+        setTimeout(function(){
+            if(carouselCount>0){
+                changeImg(imgItems[carouselCount], imgItems[(carouselCount - 1)]);
+            }else changeImg(imgItems[0], imgItems[4]);
+            carouselCount--;
+            if(carouselCount <= 0) carouselCount = 4;
+        },5000);
+    }
 }
 
     setTimeout(function(){
